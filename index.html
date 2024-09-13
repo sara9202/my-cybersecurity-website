@@ -26,6 +26,45 @@
         <p>This website is dedicated to exploring the world of cybersecurity. Whether you're a beginner eager to learn the basics, a professional looking to enhance your skills, or simply curious about the latest trends and threats, you'll find valuable insights here. Join me on this journey as we dive into topics like encryption, secure communications, digital forensics, and more.</p>
     </section>
 
+    <h3>Key Concepts</h3>
+    <ul>
+        <li><strong>Vulnerability:</strong> A weakness or flaw in a system that can be exploited by a threat actor.</li>
+        <li><strong>Threat:</strong> A potential danger or risk that could exploit a vulnerability.</li>
+        <li><strong>Threat Actor:</strong> An entity, such as a hacker or malicious software, with the intent to cause harm or exploit vulnerabilities.</li>
+        <li><strong>Exploit:</strong> The act of successfully taking advantage of a vulnerability by a threat actor.</li>
+    </ul>
+
+    <h3>Importance of Controls and Countermeasures</h3>
+    <p>To mitigate risks and enhance security, organizations implement various controls and countermeasures. These are designed to:</p>
+    <ul>
+        <li>Reduce or eliminate vulnerabilities within systems.</li>
+        <li>Minimize the likelihood of a threat actor successfully exploiting a vulnerability.</li>
+        <li>Reduce or eliminate the impact of a potential exploit.</li>
+    </ul>
+    <p><strong>Control Objectives:</strong> Specific goals set to achieve desired security outcomes by implementing the appropriate controls.</p>
+    <p><strong>Countermeasures:</strong> Reactive controls implemented to address specific threats and reduce their impact.</p>
+
+    <h3>Diversity and Layered Security</h3>
+    <p>Effective cybersecurity strategies rely on the principle of control diversity, ensuring that no single point of failure exists. This approach, known as <strong>Defense in Depth</strong> (or layered security), involves implementing multiple overlapping layers of different types of controls to create a robust defense against potential threats. Each control should function independently to avoid a cascading failure if one control is compromised.</p>
+
+    <h3>Control Categories and Classifications</h3>
+    <p>Controls in cybersecurity are categorized into several types based on their function and implementation:</p>
+    <ul>
+        <li><strong>Technical Controls:</strong> Implemented using hardware, software, or firmware to protect systems (e.g., firewalls, encryption, authentication systems).</li>
+        <li><strong>Managerial Controls:</strong> Related to governance, risk management, and strategic decision-making (e.g., risk assessments, project management).</li>
+        <li><strong>Operational Controls:</strong> Processes primarily executed by people to maintain security (e.g., training, change management).</li>
+        <li><strong>Physical Controls:</strong> Measures designed to protect physical assets and facilities (e.g., locks, surveillance cameras, fences).</li>
+    </ul>
+
+    <h3>The CIA Triad: Foundation of Information Security</h3>
+    <p>The CIA Triad is a fundamental model in cybersecurity, guiding the development of security policies and strategies. It consists of three core principles:</p>
+    <ul>
+        <li><strong>Confidentiality:</strong> Ensuring that information is accessible only to those authorized to view it. This involves safeguarding data from unauthorized access and disclosure.</li>
+        <li><strong>Integrity:</strong> Ensuring that data is accurate, authentic, and reliable. It involves protecting data from unauthorized alterations, ensuring that it remains unchanged during transit and storage.</li>
+        <li><strong>Availability:</strong> Ensuring that information and systems are accessible to authorized users when needed. It involves maintaining system functionality and uptime.</li>
+    </ul>
+    </section>
+
     <article>
         <section>
             <h2>Understanding Public Key Infrastructure (PKI)</h2>
@@ -75,9 +114,135 @@
         </section>
 
         <section>
-            <h2>Conclusion</h2>
-            <p>Understanding PKI, encryption methods, and key management is crucial for maintaining secure communications and protecting sensitive data. As technology evolves, so will the tools and techniques for ensuring digital security.</p>
+            <h2>Types of Attacks</h2>
+            <p>In cybersecurity, understanding different types of attacks is essential to defending against them. Here are some common types of malicious attacks that can target your systems:</p>
+
+            <h3>Malware</h3>
+            <p>Malware, or malicious software, is a broad category that includes various types of harmful programs designed to infiltrate and damage systems:</p>
+            <ul>
+                <li><strong>Viruses:</strong> Malware that replicates itself but requires a host program to execute and spread.</li>
+                <li><strong>Worms:</strong> Self-replicating malware that spreads across networks without user action.</li>
+                <li><strong>Ransomware:</strong> Malware that encrypts data and demands payment for the decryption key.</li>
+                <li><strong>Trojan Horse:</strong> Malware disguised as legitimate software.</li>
+                <li><strong>Rootkit:</strong> Malware that hides its presence and controls the operating system.</li>
+                <li><strong>Keylogger:</strong> Malware that records keystrokes to steal sensitive information.</li>
+                <li><strong>Spyware:</strong> Malware that secretly monitors and collects data from the user.</li>
+                <li><strong>Bloatware:</strong> Unwanted software that comes pre-installed on a new device.</li>
+                <li><strong>Logic Bomb:</strong> Malware that triggers under specific conditions, often set by time or events.</li>
+            </ul>
+
+            <h3>Ransomware</h3>
+            <p>A particularly nasty type of malware that encrypts your data, making it unavailable until a ransom is paid. Ransomware targets valuable files like pictures, documents, and videos, but the operating system remains available to display ransom messages. To protect against ransomware:</p>
+            <ul>
+                <li>Regularly back up data offline.</li>
+                <li>Keep your operating systems and software updated with security patches.</li>
+                <li>Use reliable anti-malware and antivirus software with up-to-date signatures.</li>
+            </ul>
+
+            <h3>Viruses and Worms</h3>
+            <p><strong>Viruses:</strong> Malware that replicates by attaching itself to a host program and requires user action to execute. Viruses can spread through files or networks and can vary from harmless to highly damaging.</p>
+            <p><strong>Worms:</strong> Self-replicating malware that spreads across networks without any user interaction. Worms use the network as a transmission medium and can quickly infect multiple devices.</p>
+
+            <h3>Spyware and Keyloggers</h3>
+            <p><strong>Spyware:</strong> Malware that secretly gathers information from a user’s device, often for advertising or identity theft. It can trick users into installation and may also include a keylogger.</p>
+            <p><strong>Keylogger:</strong> Records every keystroke made by a user, capturing sensitive data like passwords, credit card numbers, and messages.</p>
+
+            <h3>Physical Attacks and Environmental Attacks</h3>
+            <p>Physical and environmental attacks target the physical components of systems and infrastructure. Examples include brute force attacks on doors or windows, RFID cloning, and turning off power or HVAC systems in data centers.</p>
+
+            <h3>Denial of Service (DoS) and Distributed Denial of Service (DDoS)</h3>
+            <p>These attacks overload a system, making it unavailable to legitimate users. A DoS attack uses one source to flood the target, while a DDoS attack uses multiple devices, such as botnets, to create traffic spikes that overwhelm the target's resources.</p>
+
+            <h3>DNS Attacks</h3>
+            <p><strong>DNS Poisoning:</strong> Modifying DNS server records to redirect users to malicious sites.</p>
+            <p><strong>Domain Hijacking:</strong> Gaining unauthorized control over a domain's registration, redirecting traffic or using it for malicious purposes.</p>
+            <p><strong>URL Hijacking (Typosquatting):</strong> Exploiting common misspellings of domain names to redirect users to malicious websites.</p>
+
+            <h3>Wireless Attacks</h3>
+            <p>Wireless networks can be vulnerable to attacks such as deauthentication (kicking users off a network) and radio frequency (RF) jamming, which interferes with wireless signals to prevent communication.</p>
+
+            <h3>On-Path and Replay Attacks</h3>
+            <p><strong>On-Path Attack:</strong> An attacker intercepts communication between two parties, previously known as a "man-in-the-middle" attack.</p>
+            <p><strong>Replay Attack:</strong> The attacker captures and retransmits legitimate data to gain unauthorized access.</p>
+
+            <h3>Malicious Code Attacks</h3>
+            <p>These include code injection, cross-site scripting (XSS), and directory traversal attacks, exploiting vulnerabilities in application code to execute unauthorized actions or gain access to sensitive data.</p>
+
+            <h3>Password Attacks</h3>
+            <p>Password attacks involve various methods to crack or steal passwords, including brute force, dictionary attacks, and password spraying. Strong passwords and hashing can help defend against these attacks.</p>
         </section>
+
+        <section>
+            <h2>Threat Actors and Attributes</h2>
+            <p>In cybersecurity, understanding the different types of threat actors and their attributes is crucial for developing effective defense strategies. A threat represents a potential danger to a system, while a vulnerability is a weakness that can be exploited by a threat actor with malicious intent.</p>
+
+            <h3>Types of Attacks</h3>
+            <p>Threat actors can initiate two main types of attacks:</p>
+            <ul>
+                <li><strong>Targeted Attack:</strong> When a threat actor specifically chooses a target for a defined objective.</li>
+                <li><strong>Opportunistic Attack:</strong> When a threat actor takes advantage of a vulnerability in any available target, rather than selecting a specific one.</li>
+            </ul>
+
+            <h3>Types of Cyber Threat Actors</h3>
+            <ul>
+                <li><strong>Lone Skilled or Unskilled Attackers:</strong> Individuals acting alone, with varying levels of skill and motivation.</li>
+                <li><strong>Hacktivists:</strong> Groups or individuals using hacking to make political or social statements.</li>
+                <li><strong>Organized Crime:</strong> Criminal organizations using cyber attacks for financial gain, often well-funded and sophisticated.</li>
+                <li><strong>Nation States:</strong> Government-sponsored actors looking to disrupt another nation’s infrastructure or conduct espionage.</li>
+                <li><strong>Insiders and Shadow IT:</strong> Employees or unauthorized IT activities within an organization that can create security risks.</li>
+            </ul>
+
+            <h3>Means and Motives of Threat Actors</h3>
+            <ul>
+                <li><strong>Script Kiddies:</strong> Inexperienced attackers using existing tools for bragging rights, with low skill levels.</li>
+                <li><strong>Hackers:</strong> Skilled individuals who typically seek financial gain or recognition.</li>
+                <li><strong>Hacktivists:</strong> Groups driven by political or social causes, aiming to make statements or draw attention to specific issues.</li>
+                <li><strong>Cyber Criminals:</strong> Highly motivated and organized groups seeking financial gain, often with significant resources.</li>
+                <li><strong>Nation States:</strong> Sophisticated actors involved in espionage or cyber warfare, often well-funded and with the luxury of time.</li>
+                <li><strong>Insiders:</strong> Individuals within an organization who may act out of grievance, revenge, or under duress, with varying levels of sophistication.</li>
+                <li><strong>Shadow IT:</strong> Unapproved IT activities carried out by employees to accomplish tasks, often bypassing organizational security controls.</li>
+                <li><strong>Competitors:</strong> Rival organizations engaging in cyber espionage to gain a competitive advantage.</li>
+            </ul>
+
+            <h3>Non-Opportunistic Types of Threats</h3>
+            <p>Not all threats come from adversaries with malicious intent. Some are due to natural or operational circumstances:</p>
+            <ul>
+                <li><strong>Natural Threats:</strong> Events such as earthquakes, storms, floods, and other environmental factors.</li>
+                <li><strong>Public Health Emergencies:</strong> Situations like pandemics that affect public health and safety.</li>
+                <li><strong>Operational Threats:</strong> Issues such as service loss, technical failures, or equipment malfunctions.</li>
+                <li><strong>Human Threats:</strong> Accidental human errors, civil disturbances, or work stoppages.</li>
+            </ul>
+
+            <h3>Threat Modeling and Intelligence</h3>
+            <p>Threat modeling is a structured process for identifying potential threats and threat actors. The goal is to understand the "what," "how," and "who" of potential attacks:</p>
+            <ul>
+                <li><strong>Asset-Centric:</strong> Focuses on identifying valued assets and motivations behind targeting them.</li>
+                <li><strong>Architectural-Centric:</strong> Identifies strengths and weaknesses in system design.</li>
+                <li><strong>Attacker-Centric:</strong> Focuses on understanding the adversaries and their tactics.</li>
+            </ul>
+
+            <h3>Sources of Threat Intelligence</h3>
+            <p>Threat intelligence is evidence-based knowledge about emerging threats. It can be obtained from various sources, including:</p>
+            <ul>
+                <li><strong>Technology Vendors:</strong> Subscriptions or public feeds from companies like Cisco or Apple.</li>
+                <li><strong>Cybersecurity Companies:</strong> Threat intelligence from specialized security firms like FireEye or AlienVault.</li>
+                <li><strong>Journalists and Researchers:</strong> Insights from industry thought leaders and investigative reports.</li>
+                <li><strong>Government Agencies:</strong> Data from organizations like NIST, FBI, or CERT.</li>
+                <li><strong>Open Source Intelligence (OSINT):</strong> Data collected from publicly available sources for use in an intelligence context.</li>
+            </ul>
+
+            <p>Understanding the attributes, motives, and methods of threat actors is critical to defending against cyber attacks. By identifying potential threats and using intelligence from various sources, organizations can develop robust defenses and respond proactively to emerging risks.</p>
+        </section>
+
+        <section>
+            <h3>Conclusion</h3>
+            <p>In today's digital landscape, understanding the various types of cyber threats and the actors behind them is essential for building a strong defense strategy. From malware and ransomware to social engineering and physical attacks, the range of potential threats is vast and continually evolving. Each attack type has its own characteristics and methods, requiring organizations and individuals to remain vigilant and proactive.</p>
+
+            <p>Recognizing the attributes, motives, and tactics of different threat actors—whether they are lone hackers, organized crime groups, nation-states, or insiders—enables a more targeted and effective approach to cybersecurity. Employing comprehensive threat modeling and leveraging diverse sources of threat intelligence, such as government agencies, cybersecurity vendors, and open-source intelligence, can help identify and mitigate risks before they become incidents.</p>
+
+            <p>Cyber-security is not just about defending against attacks but also about understanding the complex ecosystem of threats and vulnerabilities. By applying layered security controls, maintaining awareness of the latest attack vectors, and continuously adapting to new threats, organizations can enhance their resilience and safeguard their critical assets. As the threat landscape continues to change, staying informed, prepared, and agile remains the key to effective cybersecurity.</p>
+        </section>
+
     </article>
 </main>
 
